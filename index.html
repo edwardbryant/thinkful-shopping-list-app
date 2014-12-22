@@ -2,50 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.min..css">
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome-4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
     <title>The Never-Ending Grocery List</title>
 </head>
 <body>
 <header>
     <div class="content">
         <h1><span id="title-1">The</span><span id="title-2">Never-Ending</span><span id="title-3">Grocery List</span></h1>
-        <div id="logo"><img src="#"></div>
+        <div id="logo"><img src="img/bag.png"></div>
     </div>
 </header>
 <main id="main" role="main">
     <div class="content"> 
         <section id="add">
-            <h2>Add</h2>
-            <div><input type="text" id="new-item" name="new-item"></div>
+            <h2>Add This</h2>
+            <div class="">
+                <input type="text" id="new-item" name="new-item" placeholder="[new item]">
+            </div>
         </section>
         <section id="need">
-            <h2>Need</h2>
+            <h2>Need 10 Items</h2>
             <div class="grocery-list">
-                <div class="item">Vitamin Water (10)</div>
-                <div class="item">Kale (1)</div>
-                <div class="item">Rice Cakes (4)</div>
-                <div class="item">Greek Yogurt (1)</div>
+                <div class="item"><i class="fa fa-square-o"></i> Vitamin Water (10)</div>
+                <div class="item"><i class="fa fa-square-o"></i> Kale (1)</div>
+                <div class="item"><i class="fa fa-square-o"></i> Rice Cakes (4)</div>
+                <div class="item"><i class="fa fa-square-o"></i> Greek Yogurt (1)</div>
             </div>
         </section>
         <section id="got">
-            <h2>Got</h2>
+            <h2>Got 12 Items</h2>
             <div class="grocery-list">
-                <div class="item">Vodka (1)</div>
-                <div class="item">Pop Tarts (2)</div>
-                <div class="item">Sharp Chedder Cheese (4)</div>
-                <div class="item">Lucky Charms (1)</div>
+                <div class="item"><i class="fa fa-check-square-o"></i> Vodka (1)</div>
+                <div class="item"><i class="fa fa-check-square-o"></i> Pop Tarts (2)</div>
+                <div class="item"><i class="fa fa-check-square-o"></i> Sharp Chedder Cheese (4)</div>
+                <div class="item"><i class="fa fa-check-square-o"></i> Lucky Charms (1)</div>
             </div>
         </section>
     </div>    
 </main>
 <footer>
     <div class="content">
+        <div class="credits">Bag icon via <a href="http://www.pixeden.com/media-icons/flat-design-icons-set-vol1">Flat Design Icon Set, Vol 1</a> &bull; <a href="http://www.pixeden.com/">pixeden.com</a></div>
         <div id="copyright">Copyright &copy; 2014, Edward Bryant</div>    
+        <div class="credits">Go Forth and Shop!</div>
     </div>    
 </footer>
 </body>
