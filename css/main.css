@@ -88,13 +88,25 @@ h2 {
 }
 #add-box > #add-input {
     margin-left: 1rem;
+    width: 84%;
 }
 #add-box > #add-btn {
     width: 6rem;
     text-align: center;
     margin-right: 1rem;
-    background-color: #f5aba2;
+    border: 0;
     float: right;
+}
+
+#add-box > #add-input input {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0;
+    background-color: #fffadd;
+    font-size: 2rem;
+    line-height: 4.4rem;
 }
 
 

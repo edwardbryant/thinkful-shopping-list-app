@@ -12,3 +12,4 @@ function updateTotal(type) {
     var total = Total(type);
     $("#" + type).find(".total").text(total);
 } 
+
