@@ -69,6 +69,24 @@ h2 {
     letter-spacing: 0.2rem;
 }
 
+/* ITEM COLS SETTINGS */
+
+.col-left {
+    width: 6%;    
+    text-align: center;
+    height: 4.8rem;
+}
+.col-middle {
+    width: 86%;
+}
+.col-right {
+    width: 6%;
+    float: right;
+    text-align: center;
+    height: 4.8rem;
+}
+
+/* ADD ITEM SECTION */
 
 #add-box {
     color: #393438;
@@ -82,16 +100,10 @@ h2 {
 #add-box div {
     display: inline-block;
 }
-#add-box > #add-pointer {
-    width: 4%;
-    height: 4.8rem;
+#add-box .col-left {
     font-size: 3rem;
-    text-align: center;
 }
-#add-box > #add-input {
-    width: 86%;
-}
-#add-box > #add-input input {
+#add-box #new-item {
     width: 100%;
     height: 4.8rem;
     -webkit-box-sizing: border-box;
@@ -102,24 +114,17 @@ h2 {
     font-size: 2rem;
     margin: auto 0;
     padding-left: 1rem;
-}#add-box > #add-btn {
-    float: right;
-    width: 8%;
-    height: 4.8rem;
-    font-size: 3rem;
-    text-align: center;
+}
+#add-box #new-item:hover {
+    background-color: #f7efbc;
+}
+#add-box .col-right {
+    color: green;
     cursor: pointer;
+    font-size: 3rem;
 }
 
-
-
-
-/*
-}
-#add-box input:hover {
-    background-color: #d6d3b5;
-}
-*/
+/* GROCERY LISTS */
 
 .grocery-list {
     color: #393438;
@@ -127,31 +132,36 @@ h2 {
     border-top: 4px solid #fffadd;
 }
 
-/* ITEM STYLE */
+/* ITEM STYLES FOR NEED AND GOT  */
+
+.empty {
+    padding: 2rem;
+    font-size: 2rem;
+}
 
 .item {
     text-align: left;
     line-height: 4.8rem;
-    font-size: 2rem;
     height: 5rem;
     width: 100%;
 }
 .item:hover {
-    background-color: #d6d3b5;
+    background-color: #f7efbc;
 }
 .item div {
     display: inline-block;
 }
-.item > .check {
-    margin-left: 1rem;
+.item .check {
+    font-size: 2rem;
+    cursor: pointer;
 }
-.item > .name {
-    margin-left: 1rem;
+.item .name {
+    font-size: 2rem; 
 }
-.item > .remove {
-    margin-right: 1rem;
+.item .remove {    
     color: #f5aba2;
-    float: right;
+    font-size: 2.6rem;
+    cursor: pointer;
 }
 .item > .remove:hover {
     color: #d44444;
